@@ -132,6 +132,8 @@ GameObject:
   m_Component:
   - component: {fileID: 55334148}
   - component: {fileID: 55334149}
+  - component: {fileID: 55334151}
+  - component: {fileID: 55334150}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -175,6 +177,45 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0991983, y: 0.18945257, z: 0.07225781}
   m_Center: {x: 0.01883952, y: 0.106207214, z: 0.13932693}
+--- !u!114 &55334150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55334147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7348eadac75ea4698ea4a25d0cdbe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &55334151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55334147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc838a9346e3a84c85203671000001d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 55334150}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: WaterGunScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &166230714
 PrefabInstance:
   m_ObjectHideFlags: 0
