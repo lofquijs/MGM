@@ -1,0 +1,62 @@
+{
+    "name": "XRHandActions",
+    "maps": [
+        {
+            "name": "LeftHand",
+            "id": "3044c832-8302-469d-a240-8dff1496742d",
+            "actions": [
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "047198fc-5ead-4ee5-9be6-5854d3b7518f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ae4684b3-fc4d-4f05-8a83-41ed9b31ad27",
+                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightHand",
+            "id": "15d7dd46-961c-431a-bde6-a4b1b19f4158",
+            "actions": [
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "37706621-14e2-47d3-b51d-a53a88937c8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ad62697e-3520-4ed4-85c2-00a856f4595b",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
