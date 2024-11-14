@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class HandBallThrower : MonoBehaviour
+public class BallThrower : MonoBehaviour
 {
     public float throwForce = 10f;
     private Rigidbody rb;
@@ -14,6 +14,8 @@ public class HandBallThrower : MonoBehaviour
     public InputActionAsset actionAsset;
     private InputAction throwActionLeft;
     private InputAction throwActionRight;
+
+    private XRGrabInteractable grabInteractable;
 
     void Start()
     {
@@ -26,28 +28,34 @@ public class HandBallThrower : MonoBehaviour
         // Enable the actions
         throwActionLeft.Enable();
         throwActionRight.Enable();
+
+        // Get the grab interactable component
+        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable.selectEntered.AddListener(OnSelectEntered);
+        grabInteractable.selectExited.AddListener(OnSelectExited);
     }
 
-    void Update()
-    {
-        // Check for a specific gesture or button press to throw the ball
-        if (IsThrowingGesture(throwActionLeft) || IsThrowingGesture(throwActionRight))
-        {
-            ThrowBall();
-        }
-    }
+    void OnSelectEntered(SelectEnterEventArgs args)
+{
+    rb.isKinematic = true; // Make the Rigidbody kinematic while being held
+}
 
-    bool IsThrowingGesture(InputAction action)
+void OnSelectExited(SelectExitEventArgs args)
+{
+    rb.isKinematic = false; // Make the Rigidbody dynamic again when released
+    rb.velocity = Vector3.zero;
+    rb.angularVelocity = Vector3.zero;
+
+    if (throwActionLeft.triggered || throwActionRight.triggered)
     {
-        if (action.ReadValue<float>() > 0.5f)
-        {
-            return true;
-        }
-        return false;
+        ThrowBall();
     }
+}
+
 
     void ThrowBall()
     {
         rb.AddForce(transform.forward * throwForce, ForceMode.Impulse);
     }
 }
+
