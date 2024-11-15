@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.XR;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -36,26 +35,24 @@ public class BallThrower : MonoBehaviour
     }
 
     void OnSelectEntered(SelectEnterEventArgs args)
-{
-    rb.isKinematic = true; // Make the Rigidbody kinematic while being held
-}
-
-void OnSelectExited(SelectExitEventArgs args)
-{
-    rb.isKinematic = false; // Make the Rigidbody dynamic again when released
-    rb.velocity = Vector3.zero;
-    rb.angularVelocity = Vector3.zero;
-
-    if (throwActionLeft.triggered || throwActionRight.triggered)
     {
-        ThrowBall();
+        rb.isKinematic = true; // Make the Rigidbody kinematic while being held
     }
-}
 
+    void OnSelectExited(SelectExitEventArgs args)
+    {
+        rb.isKinematic = false; // Make the Rigidbody dynamic again when released
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        if (throwActionLeft.triggered || throwActionRight.triggered)
+        {
+            ThrowBall();
+        }
+    }
 
     void ThrowBall()
     {
         rb.AddForce(transform.forward * throwForce, ForceMode.Impulse);
     }
 }
-
