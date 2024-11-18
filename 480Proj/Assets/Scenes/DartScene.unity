@@ -3887,7 +3887,6 @@ GameObject:
   - component: {fileID: 781129345}
   - component: {fileID: 781129344}
   - component: {fileID: 781129343}
-  - component: {fileID: 781129342}
   - component: {fileID: 781129347}
   m_Layer: 0
   m_Name: PalmDetector
@@ -3896,19 +3895,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &781129342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781129341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ea30f45eb92144d90a79d73adc8821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menu: {fileID: 0}
 --- !u!114 &781129343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3924,7 +3910,7 @@ MonoBehaviour:
   m_HandTrackingEvents: {fileID: 1599791287}
   m_HandShapeOrPose: {fileID: 11400000, guid: e7b5bfc4e711f9049b4ad03ade500a21, type: 2}
   m_TargetTransform: {fileID: 0}
-  m_Background: {fileID: 0}
+  m_Background: {fileID: 781129344}
   m_GesturePerformed:
     m_PersistentCalls:
       m_Calls:
@@ -4023,7 +4009,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781129341}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea8da7f37540a9144a91137034cc7374, type: 3}
   m_Name: 
@@ -5730,7 +5716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1090544174
 BoxCollider:
   m_ObjectHideFlags: 0

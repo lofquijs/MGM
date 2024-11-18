@@ -38,6 +38,7 @@ public class MenuController : MonoBehaviour
     {
         if (menu != null)
         {
+            Debug.Log("Hiding Menu!");
             menu.SetActive(false);
         }
     }
