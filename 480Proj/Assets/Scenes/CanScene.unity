@@ -3357,8 +3357,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.8927138, y: 1, z: 0.86134005}
-  m_Center: {x: -0.21634829, y: 0, z: 0.06932998}
+  m_Size: {x: 2.8927138, y: 1, z: 0.76407933}
+  m_Center: {x: -0.21634829, y: 0, z: 0.117960334}
 --- !u!4 &877513350
 Transform:
   m_ObjectHideFlags: 0
@@ -4596,6 +4596,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.083
       objectReference: {fileID: 0}
+    - target: {fileID: 8107088948695368048, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8733093507751517971, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -5531,6 +5535,16 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
+--- !u!4 &1358737634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7990873191231833676, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 1255885711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1358737635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8733093507751517968, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 1255885711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1365292951 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183826116813544918, guid: 95636b0a915842347bc1e2389d283c5d, type: 3}
@@ -5833,8 +5847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 3
   handNode: 4
-  playerTransform: {fileID: 0}
-  cameraTransform: {fileID: 0}
+  playerTransform: {fileID: 1358737635}
+  cameraTransform: {fileID: 1358737634}
   forwardThreshold: 0.3
 --- !u!1 &1488276619
 GameObject:
