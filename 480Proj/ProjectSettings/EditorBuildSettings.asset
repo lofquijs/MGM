@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/DartScene.unity
+    path: Assets/Scenes/KnifeScene.unity
     guid: b77bf39782653244a99fbcbd0d8a6742
   - enabled: 1
     path: Assets/Scenes/CanScene.unity

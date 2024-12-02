@@ -8683,6 +8683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NinjaTanto
       objectReference: {fileID: 0}
+    - target: {fileID: 6418907685353874963, guid: c72db1afbb0289c46b75fa98fb332211, type: 3}
+      propertyPath: m_TagString
+      value: dart
+      objectReference: {fileID: 0}
     - target: {fileID: 6418907685354043955, guid: c72db1afbb0289c46b75fa98fb332211, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
