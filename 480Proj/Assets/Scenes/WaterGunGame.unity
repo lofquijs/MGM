@@ -9060,7 +9060,7 @@ MonoBehaviour:
   handNode: 4
   playerTransform: {fileID: 1599791285}
   cameraTransform: {fileID: 1599791287}
-  forwardThreshold: 0.5
+  forwardThreshold: 0.4
 --- !u!1 &1036574238
 GameObject:
   m_ObjectHideFlags: 0
