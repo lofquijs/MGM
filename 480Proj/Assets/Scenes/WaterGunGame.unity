@@ -1665,6 +1665,7 @@ GameObject:
   - component: {fileID: 436729542}
   - component: {fileID: 436729544}
   - component: {fileID: 436729543}
+  - component: {fileID: 436729545}
   m_Layer: 0
   m_Name: ParticleSystem
   m_TagString: water
@@ -6486,6 +6487,21 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &436729545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436729541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b7d7151211aec4da621510350e898b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 1599791284}
+  jointName: R_IndexTip
+  particleSystem: {fileID: 436729544}
 --- !u!1001 &528387215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11280,10 +11296,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7690080512698956844, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 865075385244835223, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_Name
       value: XR Interaction Hands Setup
@@ -11452,6 +11464,10 @@ PrefabInstance:
       propertyPath: m_RequestedTrackingOriginMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7690080512698956844, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -11501,8 +11517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0e0d6bb6f735043b58a692f26b6262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearGunObject: {fileID: 0}
-  isRightHand: 1
 --- !u!114 &1599791290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11515,8 +11529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90594f39cd5a909488a72d11fe031345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 0}
-  isRightHand: 1
 --- !u!1 &1613967454
 GameObject:
   m_ObjectHideFlags: 0
