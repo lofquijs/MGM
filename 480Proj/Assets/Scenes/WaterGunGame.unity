@@ -176,7 +176,15 @@ MonoBehaviour:
     Warnings:
 
     You cannot teleport in this
-    tent! '
+    tent!
+
+
+    Navigation:
+
+    1. Walk out the tent to go back to the start!
+
+    2.
+    Turn your right palm facing up for a menu.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
